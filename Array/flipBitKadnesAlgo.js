@@ -1,4 +1,4 @@
-arr = [1, 0, 0, 1, 0];
+let arr = [1, 0, 0, 1, 0];
 
 //Kadanes principal
 function flipBits(arr){
