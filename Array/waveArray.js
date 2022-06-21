@@ -1,5 +1,5 @@
 
-let A =  [  6, 17, 15, 13];
+let A =  [ 6, 17, 15, 13];
 
 console.log(waveArr(A))
 
