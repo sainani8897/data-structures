@@ -177,6 +177,24 @@ class LinkedList {
 		console.log(str);
 	}
 
+	reverseLinkedList(){
+		var curr = this.head;
+		var str = "";
+		var prev = null
+		var count = 0;
+		while (curr) {
+			let temp = curr.next;
+			curr.next = prev;
+			prev = curr
+			curr = temp;
+			// str += curr.element + " ";
+			// curr = curr.next;
+		}
+		// console.log();
+		this.head = prev;
+		return this
+	}
+
 }
 
 // creating an object for the
@@ -211,6 +229,11 @@ console.log("is element removed ?" + ll.removeElement(50));
 // prints 10 20 30 40
 ll.printList();
 
+
+console.log("Reversed List!");
+// Reversed List
+
+
 // returns 3
 console.log("Index of 40 " + ll.indexOf(40));
 
@@ -226,5 +249,12 @@ console.log("is List Empty ? " + ll.isEmpty());
 // remove 3rd element from the list
 console.log(ll.removeFrom(3));
 
+
+
 // prints 10 20 60 40
 ll.printList();
+
+
+ll.reverseLinkedList().printList();
+
+
