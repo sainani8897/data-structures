@@ -230,8 +230,7 @@ console.log("is element removed ?" + ll.removeElement(50));
 ll.printList();
 
 
-console.log("Reversed List!");
-// Reversed List
+
 
 
 // returns 3
@@ -254,7 +253,8 @@ console.log(ll.removeFrom(3));
 // prints 10 20 60 40
 ll.printList();
 
-
+console.log("Reversed List!");
+// Reversed List
 ll.reverseLinkedList().printList();
 
 
